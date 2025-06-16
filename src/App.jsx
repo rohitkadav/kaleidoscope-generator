@@ -10,6 +10,13 @@ import BrushControls from './components/brushControl.jsx';
 import Animate from './components/animation.jsx';
 import { useKaleidoscopeHistory } from './hooks/useKaledioscopeHistory.js';
 import { exportCanvasAsImage } from './utils/exportCanvas';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaXTwitter,
+  FaGithub,
+  FaYoutube,
+} from "react-icons/fa6";
 
 function App() {
   const [segments, setSegments] = useState(8);
@@ -173,7 +180,33 @@ function App() {
             </div>
           </div>
         </div>
+
+        {/* Footer */}
+    
+
       </div>
+       <footer className={`w-full ${!isDarkMode ? 'text-black' : 'text-gray-400'} py-4 px-6 rounded-lg flex justify-between items-center`}>
+        <p className="text-sm">
+        © {new Date().getFullYear()} Rohit Kadav(TechSword). All rights reserved.
+      </p>
+      <div className={`flex gap-4 ${!isDarkMode ? 'text-black' : 'text-gray-400'}`}>
+        <a href="#" className="hover:text-white" aria-label="Facebook">
+          <FaFacebookF />
+        </a>
+        <a href="" className="hover:text-white" aria-label="Instagram">
+          <FaInstagram />
+        </a>
+        <a href="#" className="hover:text-white" aria-label="Twitter">
+          <FaXTwitter />
+        </a>
+        <a href="https://github.com/rohitkadav" className="hover:text-white" aria-label="GitHub">
+          <FaGithub />
+        </a>
+        <a href="#" className="hover:text-white" aria-label="YouTube">
+          <FaYoutube />
+        </a>
+      </div>
+    </footer>
     </div>
   );
 }
