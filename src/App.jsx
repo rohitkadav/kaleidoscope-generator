@@ -160,7 +160,7 @@ function App() {
                 </ul>
               </div>
               <div>
-                <h3 className={`font-semibold mb-2 ${isDarkMode ? 'text-black' : 'text-gray-700'}`}>Controls</h3>
+                <h3 className={`font-semibold mb-2 ${isDarkMode ? 'text-black' : 'text-gray-700'} dark:text-white`}>Controls</h3>
                 <ul className={`space-y-1 ${isDarkMode ? 'text-black' : 'text-gray-600'} dark:text-white`}>
                   <li>• Choose colors from the left palette</li>
                   <li>• Adjust brush settings on the right</li>
@@ -169,7 +169,7 @@ function App() {
                 </ul>
               </div>
               <div>
-                <h3 className={`font-semibold mb-2 ${isDarkMode ? 'text-black' : 'text-gray-700'}`}>Features</h3>
+                <h3 className={`font-semibold mb-2 ${isDarkMode ? 'text-black' : 'text-gray-700'} dark:text-white`}>Features</h3>
                 <ul className={`space-y-1 ${isDarkMode ? 'text-black' : 'text-gray-600'} dark:text-white`}>
                   <li>• Toggle animation to rotate your pattern</li>
                   <li>• Show/hide segment lines for reference</li>
