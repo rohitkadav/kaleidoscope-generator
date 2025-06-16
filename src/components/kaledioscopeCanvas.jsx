@@ -18,17 +18,24 @@ const KaleidoscopeCanvas = ({
 
   // Animation loop
   useEffect(() => {
-    if (!isAnimating) return;
+  let animationId;
 
-    const animate = () => {
-      setRotation(prev => (prev + animationSpeed) % 360);
-      requestAnimationFrame(animate);
-    };
+  const animate = () => {
+    if (!isAnimating) return; // 💡 check before scheduling next frame
+    setRotation(prev => (prev + animationSpeed) % 360);
+    animationId = requestAnimationFrame(animate);
+  };
 
-    const animationId = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(animationId);
-  }, [isAnimating, animationSpeed]);
+  if (isAnimating) {
+    animationId = requestAnimationFrame(animate);
+  }
 
+  return () => {
+    if (animationId) {
+      cancelAnimationFrame(animationId);
+    }
+  };
+}, [isAnimating, animationSpeed]);
   // Handle canvas resize
   useEffect(() => {
     const updateCanvasSize = () => {

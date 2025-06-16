@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import KaleidoscopeCanvas from './components/kaledioscopeCanvas.jsx';
 import ColorPalette from './components/colorPalette.jsx';
 import BrushControls from './components/brushControl.jsx';
-import { useKaleidoscopeHistory } from './hooks/u';
+import { useKaleidoscopeHistory } from './hooks/useKaledioscopeHistory.js';
 import { exportCanvasAsImage } from './utils/exportCanvas';
 
 function App() {
@@ -37,11 +37,15 @@ function App() {
   };
 
   return (
+    
+   
+
     <div className={`min-h-screen transition-all duration-500 ${
       isDarkMode 
         ? 'bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900' 
         : 'bg-gradient-to-br from-blue-50 via-indigo-100 to-purple-50'
     }`}>
+      
       <div className="container mx-auto px-4 py-6">
         {/* Header */}
         <div className="text-center mb-6">
