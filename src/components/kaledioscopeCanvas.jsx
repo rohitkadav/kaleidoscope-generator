@@ -129,7 +129,6 @@ const KaleidoscopeCanvas = ({
         ctx.lineWidth = stroke.width;
         ctx.lineCap = 'round';
         ctx.lineJoin = 'round';
-
         ctx.beginPath();
         stroke.points.forEach((point, index) => {
           if (index === 0) {
@@ -196,7 +195,7 @@ const KaleidoscopeCanvas = ({
   };
 
   return (
-    <div className="flex items-center justify-center w-full h-full p-4">
+    <div className="flex items-start justify-center w-full h-full p-4">
       <canvas
         ref={canvasRef}
         width={canvasSize.width}

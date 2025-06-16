@@ -80,7 +80,7 @@ const BrushControls = ({
       </div>
 
       {/* Animation Controls */}
-      {/* <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-white/20 dark:border-gray-700/50">
+      <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-white/20 dark:border-gray-700/50">
         <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Animation</h3>
         <div className="space-y-3">
           <button
@@ -110,7 +110,7 @@ const BrushControls = ({
             />
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Actions */}
       <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-white/20 dark:border-gray-700/50">

@@ -43,7 +43,7 @@ function App() {
 
     <div className={`min-h-screen transition-all duration-500 ${
       isDarkMode 
-        ? 'bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900' 
+        ?  'bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364]'
         : 'bg-gradient-to-br from-blue-50 via-indigo-100 to-purple-50'
     }`}>
       
@@ -144,6 +144,7 @@ function App() {
                   <li>• Click and drag to draw on the black canvas</li>
                   <li>• Your strokes will be mirrored across all segments</li>
                   <li>• Use touch gestures on mobile devices</li>
+                  <li>• Choose Colors form colorPalette</li>
                 </ul>
               </div>
               <div>
