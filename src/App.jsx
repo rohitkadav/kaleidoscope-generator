@@ -146,13 +146,13 @@ function App() {
         {/* Instructions */}
         <div className="mt-8 max-w-6xl mx-auto">
           <div className={`bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/20 dark:border-gray-700/50 transition-colors duration-500`}>
-            <h2 className={`text-xl font-bold mb-4 ${isDarkMode ? 'text-black' : 'text-gray-800'}`}>
+            <h2 className={`text-xl font-bold mb-4 ${isDarkMode ? 'text-black' : 'text-gray-800'}  dark:text-yellow-50`}>
               How to Use
             </h2>
             <div className="grid md:grid-cols-3 gap-4 text-sm">
-              <div>
-                <h3 className={`font-semibold mb-2 ${isDarkMode ? 'text-black' : 'text-gray-700'}`}>Drawing</h3>
-                <ul className={`space-y-1 ${isDarkMode ? 'text-black' : 'text-gray-600'}`}>
+              <div className=''>
+                <h3 className={`font-semibold mb-2 ${isDarkMode ? 'text-black' : 'text-gray-700'} dark:text-white`}>Drawing</h3>
+                <ul className={`space-y-1 ${isDarkMode ? 'text-black' : 'text-gray-600'}  dark:text-white`}>
                   <li>• Click and drag to draw on the black canvas</li>
                   <li>• Your strokes will be mirrored across all segments</li>
                   <li>• Use touch gestures on mobile devices</li>
@@ -161,7 +161,7 @@ function App() {
               </div>
               <div>
                 <h3 className={`font-semibold mb-2 ${isDarkMode ? 'text-black' : 'text-gray-700'}`}>Controls</h3>
-                <ul className={`space-y-1 ${isDarkMode ? 'text-black' : 'text-gray-600'}`}>
+                <ul className={`space-y-1 ${isDarkMode ? 'text-black' : 'text-gray-600'} dark:text-white`}>
                   <li>• Choose colors from the left palette</li>
                   <li>• Adjust brush settings on the right</li>
                   <li>• Change mirror segments (4, 6, 8, or 12)</li>
@@ -170,7 +170,7 @@ function App() {
               </div>
               <div>
                 <h3 className={`font-semibold mb-2 ${isDarkMode ? 'text-black' : 'text-gray-700'}`}>Features</h3>
-                <ul className={`space-y-1 ${isDarkMode ? 'text-black' : 'text-gray-600'}`}>
+                <ul className={`space-y-1 ${isDarkMode ? 'text-black' : 'text-gray-600'} dark:text-white`}>
                   <li>• Toggle animation to rotate your pattern</li>
                   <li>• Show/hide segment lines for reference</li>
                   <li>• Export your creation as a PNG image</li>
