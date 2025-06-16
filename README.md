@@ -71,22 +71,6 @@ npm run dev
 - Switch between dark and light themes
 - Clear canvas to start a new creation
 
-## 🏗️ Project Structure
-
-```
-src/
-├── components/
-│   ├── KaleidoscopeCanvas.tsx    # Main canvas component
-│   └── ControlPanel.tsx          # UI controls and settings
-├── hooks/
-│   └── useKaleidoscopeHistory.ts # Undo/redo functionality
-├── utils/
-│   └── exportCanvas.ts           # Image export utility
-├── App.tsx                       # Main application component
-├── main.tsx                      # Application entry point
-└── index.css                     # Global styles and utilities
-```
-
 ## 🛠️ Technical Implementation
 
 ### Kaleidoscope Algorithm
@@ -98,7 +82,7 @@ The kaleidoscope effect is achieved by:
 
 ### Key Technologies
 - **React 18** with functional components and hooks
-- **TypeScript** for type safety and better development experience
+- **JavaScript** for type safety and better development experience
 - **HTML5 Canvas** for high-performance drawing and rendering
 - **Tailwind CSS** for styling and responsive design
 - **Lucide React** for beautiful, consistent icons
@@ -141,7 +125,6 @@ npm run lint
 4. Push to the branch: `git push origin feature-name`
 5. Open a pull request
 
-## 📄 License
 
 
 ## 🙏 Acknowledgments
