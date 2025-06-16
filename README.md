@@ -2,8 +2,6 @@
 
 A beautiful, interactive kaleidoscope effect generator built with React.js  and JavaScript. Create stunning mirror patterns with real-time drawing and customizable effects.
 
-![Kaleidoscope Generator](https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=800)
-
 ## ✨ Features
 
 ### Core Features
