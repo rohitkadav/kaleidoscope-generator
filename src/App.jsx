@@ -1,3 +1,8 @@
+/*
+ * © 2025 Rohit Kadav
+ * Project: Kaleidoscope Pattern Generator for DevifyX
+ * This code is for assignment/demo purposes only. Do not reuse, redistribute, or republish without permission.
+ */
 import React, { useState } from 'react';
 import KaleidoscopeCanvas from './components/kaledioscopeCanvas.jsx';
 import ColorPalette from './components/colorPalette.jsx';
