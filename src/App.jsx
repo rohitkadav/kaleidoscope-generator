@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import KaleidoscopeCanvas from './components/kaledioscopeCanvas.jsx';
 import ColorPalette from './components/colorPalette.jsx';
 import BrushControls from './components/brushControl.jsx';
+import Animate from './components/animation.jsx';
 import { useKaleidoscopeHistory } from './hooks/useKaledioscopeHistory.js';
 import { exportCanvasAsImage } from './utils/exportCanvas';
 
@@ -68,11 +69,20 @@ function App() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-full">
           {/* Left Sidebar - Color Palette */}
           <div className="lg:col-span-3 order-2 lg:order-1">
-            <div className="sticky top-6">
+            <div className=" top-6">
               <ColorPalette
                 color={color}
                 onColorChange={setColor}
                 isDarkMode={isDarkMode}
+              />
+            </div>
+            {/* animation controls */}
+            <div className='mt-6'>
+              <Animate
+                isAnimating={isAnimating}
+                onToggleAnimation={() => setIsAnimating(!isAnimating)}
+                animationSpeed={animationSpeed}
+                onAnimationSpeedChange={setAnimationSpeed}
               />
             </div>
           </div>
@@ -117,6 +127,7 @@ function App() {
                 onToggleTheme={toggleTheme}
               />
             </div>
+
           </div>
         </div>
 
