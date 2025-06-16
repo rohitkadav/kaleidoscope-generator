@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import KaleidoscopeCanvas from './components/KaleidoscopeCanvas';
-import ColorPalette from './components/ColorPalette';
-import BrushControls from './components/BrushControls';
-import { useKaleidoscopeHistory } from './hooks/useKaleidoscopeHistory';
+import KaleidoscopeCanvas from './components/kaledioscopeCanvas.jsx';
+import ColorPalette from './components/colorPalette.jsx';
+import BrushControls from './components/brushControl.jsx';
+import { useKaleidoscopeHistory } from './hooks/u';
 import { exportCanvasAsImage } from './utils/exportCanvas';
 
 function App() {
